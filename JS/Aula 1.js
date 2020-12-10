@@ -39,5 +39,21 @@ console.log(sum(5,6));
 //quando existir apenas um argumento omite-se os ()
 var sum = a => a + 5;
 
+//retorno de objeto
+var createObj = () => ({test: 123});
 
+console.log(createObj);
 
+//arrow function não pode ser utilizada com função construtora
+//arrow function deve-se declarar a função antes de executar 
+
+//método this
+var obj = {
+    showContext: function(){
+        console.log(this);
+    },
+    log: function log(value){
+        console.log(value);
+    }
+}
+obj.showContext();
