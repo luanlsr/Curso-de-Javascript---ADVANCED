@@ -42,7 +42,7 @@ var sum = a => a + 5;
 //retorno de objeto
 var createObj = () => ({test: 123});
 
-console.log(createObj);
+console.log(createObj());
 
 //arrow function não pode ser utilizada com função construtora
 //arrow function deve-se declarar a função antes de executar 
