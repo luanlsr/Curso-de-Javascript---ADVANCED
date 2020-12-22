@@ -57,3 +57,15 @@ var obj = {
     }
 }
 obj.showContext();
+
+var obj = {
+    showContext: function(){
+        setTimeout(() =>{
+            this.log('after 1000ms');
+        }, 1000);
+    },
+    log: function log(value){
+        console.log(value);
+    }
+};  
+obj.showContext();
